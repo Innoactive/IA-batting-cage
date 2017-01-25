@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: b5fec371f52f0874c85954df41956b0a
+timeCreated: 1485164967
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Codystar
+  fontNames:
+  - Codystar
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
