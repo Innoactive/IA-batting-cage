@@ -4,12 +4,19 @@ using UnityEngine;
 
 public class Bat : MonoBehaviour {
 
-    private static readonly Vector3 localPosition = new Vector3(0.009f, 0.204f, 0.207f);
-    private static readonly Quaternion localRotation = Quaternion.Euler(-1.342f, 90.154f, -43.885f);
+    public GameObject baseballShooter;
 
-	private void Awake () {
-        transform.localPosition = localPosition;
-        transform.localRotation = localRotation;
-	}
+    private const string baseballTag = "Baseball";
+    private BaseballShooter baseballShooterScript;
+
+    private void Awake() {
+        baseballShooterScript = baseballShooter.GetComponent<BaseballShooter>();
+    }
+
+    private void OnCollisionEnter(Collision collision) {
+        if(string.Equals(collision.gameObject.tag, baseballTag)) {
+            baseballShooterScript.BatHit();
+        }
+    }
 
 }
