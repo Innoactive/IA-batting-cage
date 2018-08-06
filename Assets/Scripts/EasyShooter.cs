@@ -10,5 +10,6 @@ public class EasyShooter : MonoBehaviour,IShooter {
         ball.transform.rotation = ballSpawnPosition.rotation;
         ball.GetComponent<BallEventsObservable>().ReportBallShoot();
         ball.GetComponent<Rigidbody>().AddForce(600f, 20f, 0f);
+        ball.GetComponent<TrailRenderer>().Clear();
     }
 }
