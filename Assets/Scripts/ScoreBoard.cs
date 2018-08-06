@@ -33,6 +33,7 @@ public class ScoreBoard : MonoBehaviour {
  
     private void BallEventsObservable_OnBallHit(GameObject with,GameObject ball)
     {
+        
         if (with.tag.Equals("Bat"))
         {
             trackedObject = ball;
